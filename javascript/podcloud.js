@@ -110,6 +110,7 @@
 const playpausebtn = document.getElementById('play-pause-btn');
 var episodeslist = document.querySelectorAll('audio');
 var episodechoice = 0;
+var playingornot = 0; /* 0 = PAUSED; 1 = PLAYING */
 
 function changeplaypauseicon() {
     const playpauseicon = playpausebtn.querySelector('ion-icon').getAttribute('name');
@@ -119,6 +120,7 @@ function changeplaypauseicon() {
         playpausebtn.querySelector('ion-icon').setAttribute('style', 'margin-left: -0.1px;');
 
         episodeslist[episodechoice].play();
+        playingornot = 1;
     }
 
     else {
@@ -126,6 +128,14 @@ function changeplaypauseicon() {
         playpausebtn.querySelector('ion-icon').removeAttribute('style', 'margin-left: -1px;');
 
         episodeslist[episodechoice].pause();
+        playingornot = 0;
+    }
+}
+
+function playingornotfn(){
+    if (playingornot == 0) {
+        episodeslist[episodechoice].pause();
+        playingornot = 1;
     }
 }
 
@@ -136,12 +146,24 @@ function playepisode() {
     }
 
     else if (episodechoice == 1) {
+        playingornotfn();
         episodeslist[episodechoice].play();
         changeplaypauseicon();
     }
 
     else if (episodechoice == 2) {
+        playingornotfn();
         episodeslist[episodechoice].play();
         changeplaypauseicon();
     }
+}
+
+var progressbar = document.getElementById('seekbar');
+var currentDuration = document.getElementById('current-duration');
+var totalDuration = document.getElementById('total-duration');
+
+currentDuration.innerText = progressbar.value;
+
+progressbar.oninput = function() {
+    currentDuration.innerText = this.value;
 }

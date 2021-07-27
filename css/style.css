@@ -152,32 +152,37 @@ ion-icon {
 .time-line {
     margin-top: 15px; margin-bottom: 15px; margin-left: 50px; margin-right: 50px;
     display: flex; color: white;
-    align-items: center; text-align: center;
+    align-items: center; text-align: center; 
 }
 
-input[type="range"]::-webkit-slider-thumb {
+.time-line .slider {
+    -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
     color: rgb(206, 175, 2);
     height: 100px; width: 100px;
     cursor: pointer; position: relative;
 }
 
-input[type="range"]::-moz-range-thumb {
+.slider::-moz-range-thumb {
     color: rgb(206, 175, 2);
     height: 100px; width: 100px;
     cursor: pointer; position: relative;
 }
 
-input[type="range"]::-ms-thumb {
+.slider::-ms-thumb {
     color: rgb(206, 175, 2);
     height: 100px; width: 100px;
     cursor: pointer; position: relative;
 }
 
-.time-line-object {
-    width: 200%; height: 3px;
+.slider {
+    width: 100%; height: 3px;
     margin-left: 10px; margin-right: 10px;
     outline: none; border: none;
-    -webkit-appearance: none;
+    -webkit-appearance: none; -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
     border-radius: 3px; cursor: pointer;
 }
 

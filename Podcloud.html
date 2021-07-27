@@ -25,7 +25,7 @@
                 </div>
                 <!-- FOTO DE PERFIL E NOME DE USUÁRIO -->
                 <div class="center-header">    
-                    <img class="profileimage" src="files/podpah/profile.jpg">
+                    <img class="profileimage" src="files/profile.jpg">
                     <h2>Podpah</h2>
                 </div>
                 <!-- BOTÃO DE COMPARTILHAR -->
@@ -51,31 +51,32 @@
                 <div class="episodes-content" id="episodes-section">
                     <div class="episode-field" id="episode-field" onclick="playepisode(episodechoice = 0)">
                         <div>
-                            <img class="episode-image" src="files/podpah/profile.jpg" draggable="false"><ion-icon name="play-outline" class="playicon" id="playbutton"></ion-icon>
+                            <img class="episode-image" src="files/profile.jpg" draggable="false"><ion-icon name="play-outline" class="playicon" id="playbutton"></ion-icon>
                         </div>
                         <div class="episode-texts">
                             <div class="episode-title"><h3>KYAN - PODPAH #168</h3></div>
                             <div class="episode-description"><p>Kyan é um trapper emergente na cena nacional, direto da baixada.</p></div>
+                            <audio src="files/KYAN - Podpah.mp3"></audio>
                         </div>
                     </div>
                     <div class="episode-field" id="episode-field" onclick="playepisode(episodechoice = 1)">
                         <div>
-                            <img class="episode-image" src="files/podpah/profile.jpg" draggable="false"><ion-icon name="play-outline" class="playicon" id="playbutton"></ion-icon>
+                            <img class="episode-image" src="files/profile.jpg" draggable="false"><ion-icon name="play-outline" class="playicon" id="playbutton"></ion-icon>
                         </div>
                         <div class="episode-texts">
                             <div class="episode-title"><h3>COLDZERA - PODPAH #167</h3></div>
                             <div class="episode-description"><p>Coldzera é bicampeão mundial de CS:GO.</p></div>
-                            <audio src="files/podpah/COLDZERA - Podpah.mp3" id="audiocoldzera"></audio>
+                            <audio src="files/KYAN - Podpah.mp3" id="audiocoldzera"></audio>
                         </div>
                     </div>
                     <div class="episode-field" id="episode-field" onclick="playepisode(episodechoice = 2)">
                         <div>
-                            <img class="episode-image" src="files/podpah/profile.jpg" draggable="false"><ion-icon name="play-outline" class="playicon" id="playbutton"></ion-icon>
+                            <img class="episode-image" src="files/profile.jpg" draggable="false"><ion-icon name="play-outline" class="playicon" id="playbutton"></ion-icon>
                         </div>
                         <div class="episode-texts">
                             <div class="episode-title"><h3>CEROL - PODPAH #166</h3></div>
                             <div class="episode-description"><p>Cerol é um dos maiores streamers brasileiros.</p></div>
-                            <audio src="files/podpah/CEROL - Podpah.mp3" id="audiocerol"></audio>
+                            <audio src="files/KYAN - Podpah.mp3" id="audiocerol"></audio>
                         </div>
                     </div>
                 </div>
@@ -95,9 +96,9 @@
                 <!-- LINHA DO TEMPO -->
                 <div class="time-line">
                     <!-- CONTADOR DE TEMPO -->
-                    <div id="current-duration">00:00</div>
-                    <input class="time-line-object" type="range" min="0" max="100" id="seekbar" step="1">
-                    <div id="total-duration">00:00</div>
+                    <span id="current-duration"></span>
+                    <input type="range" class="slider" min="0" max="100" id="seekbar" value="1" id="progress-bar">
+                    <span id="total-duration"></span>
                 </div>
                 <!-- CONTROLES -->
                 <div class="control-buttons">
