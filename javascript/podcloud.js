@@ -157,13 +157,3 @@ function playepisode() {
         changeplaypauseicon();
     }
 }
-
-var progressbar = document.getElementById('seekbar');
-var currentDuration = document.getElementById('current-duration');
-var totalDuration = document.getElementById('total-duration');
-
-currentDuration.innerText = progressbar.value;
-
-progressbar.oninput = function() {
-    currentDuration.innerText = this.value;
-}
