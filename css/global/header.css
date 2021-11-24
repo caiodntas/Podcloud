@@ -10,7 +10,7 @@
     width: max-content; height: max-content;
     position: fixed; display: flex;
     align-items: center;
-    top: 10px;
+    top: 5px;
 }
 
 .header .home .homebutton {
@@ -171,7 +171,7 @@
     width: max-content; height: max-content;
     position: fixed; display: flex;
     align-items: center;
-    bottom: 50px;
+    bottom: 5px;
 }
 
 .header .exit .exitbutton {
@@ -191,7 +191,7 @@
     width: max-content; height: max-content;
     background-color: #252525; color: white; border-radius: 5px;
     padding: 5px; padding-left: 10px; padding-right: 10px;
-    left: 50px; bottom: -35px;
+    left: 50px; bottom: 5px;
     position: absolute;
     visibility: hidden;
 }

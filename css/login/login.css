@@ -5,21 +5,73 @@
 
 }
 
-.page .logofield {
-    width: 100%; height: 400px;
+.page .leftside {
+    width: 50%; height: 100%;
     display: flex;
     justify-content: center; align-items: center;
 }
 
-.page .logofield .image {
-    width: 325px; height: 300px;
+.page .leftside .logofield {
+    width: max-content; height: max-content;
+    display: block;
+    text-align: center;
 }
 
-.page .logofield .title {
-    font-weight: lighter; font-size: 72px;
+.page .leftside .logofield .logo {
+    object-fit: cover;
+    width: 50%;
+}
+
+.page .leftside .logofield .logotitle {
     color: white;
+    font-size: 60px; font-weight: lighter;
+    margin-top: 25px;
 }
 
-.page .logosystem {
 
+.page .rightside {
+    width: 50%; height: 100%;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+
+.page .rightside .loginsystem {
+    width: 300px; height: max-content;
+    padding: 30px;
+    background-color: #252525; border-radius: 10px;
+    text-align: center;
+}
+
+.page .rightside .loginsystem .field {
+    width: 100%; height: 25px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    counter-reset: white; background-color: #454545 ; border: white 1px solid; border-radius: 5px;
+}
+
+.page .rightside .loginsystem .field:focus {
+    width: 100%; height: 25px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    counter-reset: white; background-color: #454545 ; border: white 1px solid; border-radius: 5px;
+    box-shadow: 0 0 0 1px white;
+}
+
+.page .rightside .loginsystem .button {
+    width: 100%; height: 25px;
+    margin-bottom: 10px;
+    color: #454545; background-color: white; border: none; border-radius: 5px;
+    font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 15px;
+    cursor: pointer;
+}
+
+.page .rightside .loginsystem .forgotsomething {
+    text-decoration: none; list-style: none;
+    color: white; font-size: 14px;
+}
+
+.page .rightside .loginsystem .divisorline {
+    margin-top: 10px; margin-bottom: 10px;
 }
