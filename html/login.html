@@ -31,24 +31,24 @@
             <div class="loginsystem">
                 <div id="loginfield" hidden>
                     <form>
-                        <input name="usuario" class="field" placeholder="Email ou usuário" id="Userfield" required>
-                        <input name="senha" class="field" placeholder="Senha" type="password" id="PasswordField" required>
+                        <input name="usuario" class="field" placeholder="Email ou usuário" id="UserFieldLogin" required>
+                        <input name="senha" class="field" placeholder="Senha" type="password" id="PasswordFieldLogin" required>
                         <button class="button" id="SendButton">Enviar</button>
                     </form>
                     <a id="ForgetText" class="forgotsomething" href="#">Esqueceu algo?</a>
                     <hr class="divisorline">
-                    <button type="submit" class="button" id="ChangeBetweenButton">Criar nova conta</button>
+                    <button type="submit" class="button" onclick="ChangeBetweenScreens()">Criar nova conta</button>
                     <a id="ForgetText" class="forgotsomething" href="podcloud.html">Navegar anonimamente</a>
                 </div>
                 <div id="registerfield">
                     <form>
-                        <input class="field" placeholder="Email ou Usuário" id="Userfield" required>
-                        <input class="field" placeholder="Nome de Usuário" id="Username" required>
-                        <input class="field" placeholder="Senha" type="password" id="PasswordField" required>
+                        <input class="field" placeholder="Email ou Usuário" id="UserFieldRegister" required>
+                        <input class="field" placeholder="Nome de Usuário" id="UsernameFieldRegister" required>
+                        <input class="field" placeholder="Senha" type="password" id="PasswordFieldRegister" required>
                         <button class="button" id="SendButton">Cadastrar</button>
                     </form>
                     <hr class="divisorline">
-                    <button type="submit" class="button" id="ChangeBetweenButton">Já tem uma conta?</button>
+                    <button type="submit" class="button" onclick="ChangeBetweenScreens()">Já tem uma conta?</button>
                     <a id="ForgetText" class="forgotsomething" href="podcloud.html">Navegar anonimamente</a>
                 </div>
             </div>
@@ -56,6 +56,7 @@
     </div>
 </body>
 <!-- JAVASCRIPT -->
-    <!-- Header -->
-    <script src="../javascript/header.js"></script>
+    <!-- LOGIN SYSTEM -->
+    <script src="../javascript/login/changebetwin.js"></script>
+    <script src="../javascript/login/loginsystem.js"></script>
 </html>
