@@ -1,20 +1,26 @@
-LoginScreen = document.getElementById("loginfield");
-RegisterScreen = document.getElementById("registerfield");
+const LoginField = document.getElementById("loginfield");
+const RegisterField = document.getElementById("registerfield");
+const ChangeButton = document.getElementById("changebutton");
 
-var ActiveScreen
+/* 1 = LOGIN SCREEN; 2 = REGISTER SCREEN */
+var ActiveField = 1;
+
+ChangeButton.onclick = ChangeBetweenScreens;
 
 function ChangeBetweenScreens() {
-    if (ActiveScreen == 1) {
-        ActiveScreen == 2;
+    if (ActiveField == 1) {
+        ActiveField = 2;
 
-        RegisterScreen.style.setProperty('display', 'none');
-        LoginScreen.style.setProperty('display', 'block');
+        RegisterField.style.setProperty('display', 'block');
+        LoginField.style.setProperty('display', 'none');
+        ChangeButton.innerHTML = "Já tem uma conta?"
     }
 
-    if (ActiveScreen == 2) {
-        ActiveScreen == 1;
+    else {
+        ActiveField = 1;
 
-        RegisterScreen.style.setProperty('display', 'block');
-        LoginScreen.style.setProperty('display', 'none');
+        RegisterField.style.setProperty('display', 'none');
+        LoginField.style.setProperty('display', 'block');
+        ChangeButton.innerHTML = "Criar nova conta"
     }
 }

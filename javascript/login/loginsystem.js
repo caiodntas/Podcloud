@@ -1,5 +1,6 @@
-Userfield = document.getElementById("Userfield");
-Passwordfield = document.getElementById("Passwordfield");
-SendButton = document.getElementById("SendButton");
+/* INDENTIFICAÇÃO DOS ELEMENTOS DO SITE */
+Userfield = document.getElementById("UserFieldLogin");
+Passwordfield = document.getElementById("PasswordFieldLogin");
+SendButton = document.getElementById("SendButtonLogin");
 
-
+/* VARIÁVEIS */

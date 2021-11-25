@@ -29,28 +29,21 @@
         </div>
         <div class="rightside">
             <div class="loginsystem">
-                <div id="loginfield" hidden>
-                    <form>
-                        <input name="usuario" class="field" placeholder="Email ou usuário" id="UserFieldLogin" required>
-                        <input name="senha" class="field" placeholder="Senha" type="password" id="PasswordFieldLogin" required>
-                        <button class="button" id="SendButton">Enviar</button>
-                    </form>
+                <div class="loginfield" id="loginfield">
+                    <input name="usuario" class="field" placeholder="Email ou usuário" id="UserFieldLogin" required>
+                    <input name="senha" class="field" placeholder="Senha" type="password" id="PasswordFieldLogin" required>
+                    <button class="button" id="SendButtonLogin">Enviar</button>
                     <a id="ForgetText" class="forgotsomething" href="#">Esqueceu algo?</a>
-                    <hr class="divisorline">
-                    <button type="submit" class="button" onclick="ChangeBetweenScreens()">Criar nova conta</button>
-                    <a id="ForgetText" class="forgotsomething" href="podcloud.html">Navegar anonimamente</a>
                 </div>
-                <div id="registerfield">
-                    <form>
-                        <input class="field" placeholder="Email ou Usuário" id="UserFieldRegister" required>
-                        <input class="field" placeholder="Nome de Usuário" id="UsernameFieldRegister" required>
-                        <input class="field" placeholder="Senha" type="password" id="PasswordFieldRegister" required>
-                        <button class="button" id="SendButton">Cadastrar</button>
-                    </form>
-                    <hr class="divisorline">
-                    <button type="submit" class="button" onclick="ChangeBetweenScreens()">Já tem uma conta?</button>
-                    <a id="ForgetText" class="forgotsomething" href="podcloud.html">Navegar anonimamente</a>
+                <div class="registerfield" id="registerfield">
+                    <input class="field" placeholder="Email ou Usuário" id="UserFieldRegister" required>
+                    <input class="field" placeholder="Nome de Usuário" id="UsernameFieldRegister" required>
+                    <input class="field" placeholder="Senha" type="password" id="PasswordFieldRegister" required>
+                    <button class="button" id="SendButtonRegister">Cadastrar</button>
                 </div>
+                <hr class="divisorline">
+                <button class="button" id="changebutton">Criar nova conta</button>
+                <a id="ForgetText" class="forgotsomething" href="podcloud.html">Navegar anonimamente</a>
             </div>
         </div>
     </div>

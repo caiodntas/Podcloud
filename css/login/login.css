@@ -42,6 +42,10 @@
     text-align: center;
 }
 
+.page .rightside .loginsystem .registerfield {
+    display: none;
+}
+
 .page .rightside .loginsystem .field {
     width: 100%; height: 25px;
     padding: 15px;
