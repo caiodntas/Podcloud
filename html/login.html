@@ -30,10 +30,12 @@
         <div class="rightside">
             <div class="loginsystem">
                 <div class="loginfield" id="loginfield">
-                    <input name="usuario" class="field" placeholder="Email ou usuário" id="UserFieldLogin" required>
-                    <input name="senha" class="field" placeholder="Senha" type="password" id="PasswordFieldLogin" required>
-                    <button class="button" id="SendButtonLogin">Enviar</button>
-                    <a id="ForgetText" class="forgotsomething" href="#">Esqueceu algo?</a>
+                    <form action="login.php" method="post">
+                        <input name="usuario" class="field" placeholder="Email ou usuário" id="UserFieldLogin" required>
+                        <input name="senha" class="field" placeholder="Senha" type="password" id="PasswordFieldLogin" required>
+                        <input class="button" type="submit" value="Entrar"></button>
+                        <a id="ForgetText" class="forgotsomething" href="#">Esqueceu algo?</a>
+                    </form>
                 </div>
                 <div class="registerfield" id="registerfield">
                     <input class="field" placeholder="Email ou Usuário" id="UserFieldRegister" required>
