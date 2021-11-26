@@ -1,6 +1,6 @@
 /* TRENDING PODCAST'S FIELD */
 .trendingpodcasts {
-    width: 100%; height: max-content;
+    width: max-content; height: max-content;
     padding-left: 20px; padding-right: 20px;
     padding-top: 15px; padding-bottom: 15px;
     background-color: #252525; border-radius: 10px; box-shadow: 0px 3px 10px 1px #1a1a1a;
