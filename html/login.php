@@ -11,11 +11,11 @@
     $password = $_POST['password'];
 
     // CONFERÊNCIA COM O BANCO DE DADOS
-    $sql = "SELECT * FROM userdata WHERE (username = '$username' or email = '$username') AND password = '$password'";
+    $sql = "SELECT * FROM userdata WHERE (USERNAME = '$username' or EMAIL = '$username') AND PASSWORD = '$password'";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
 
-    if (($row['username'] == $username or $row['email'] == $username) && $row['password'] == $password) {
+    if (($row['USERNAME'] == $username or $row['EMAIL'] == $username) && $row['PASSWORD'] == $password) {
         echo "<script>location.replace('podcloud.html')</script>";
     } 
 

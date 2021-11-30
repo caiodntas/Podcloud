@@ -12,11 +12,23 @@
     $password = $_POST['password'];
 
     // CADASTRO NO BANCO DE DADOS
-    $sql = "INSERT INTO userdata(username, email, password) VALUES ('$username', '$email', '$password')";
+    $count = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM userdata WHERE USERNAME = '$username' or EMAIL = '$username'"));
 
-    if (mysqli_query($conn, $sql)) {
-        echo "Data Stored";
-    } else {
-        echo "<script>location.replace('login.html')</script>";
+    if ($count > 0) {
+        echo "Username is alredy taken!";
     }
+
+    else {
+        $sql = "INSERT INTO userdata(USERNAME, EMAIL, PASSWORD) VALUES ('$username', '$email', '$password')";
+
+        if (mysqli_query($conn, $sql)) {
+            echo "<script>location.replace('login.html')</script>";
+        }
+        
+        else {
+            echo "<script>location.replace('login.html')</script>";
+        }
+    }
+
+    
 ?>

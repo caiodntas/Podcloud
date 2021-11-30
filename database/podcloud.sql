@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Nov-2021 às 12:43
+-- Tempo de geração: 30-Nov-2021 às 12:34
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -28,19 +28,18 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `userdata` (
-  `id` int(255) NOT NULL,
-  `username` varchar(20) NOT NULL,
-  `email` varchar(40) NOT NULL,
-  `password` varchar(10) NOT NULL
+  `ID` int(225) NOT NULL,
+  `USERNAME` varchar(20) NOT NULL,
+  `EMAIL` varchar(50) NOT NULL,
+  `PASSWORD` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `userdata`
 --
 
-INSERT INTO `userdata` (`id`, `username`, `email`, `password`) VALUES
-(5, 'caio', 'caiodantasprofissional@outlook.com', '1234'),
-(6, 'caio', 'caiodantasprofissional@outlook.com', '1234');
+INSERT INTO `userdata` (`ID`, `USERNAME`, `EMAIL`, `PASSWORD`) VALUES
+(6, 'caioba', 'caio@exemplo.com', '1234caio');
 
 --
 -- Índices para tabelas despejadas
@@ -50,7 +49,7 @@ INSERT INTO `userdata` (`id`, `username`, `email`, `password`) VALUES
 -- Índices para tabela `userdata`
 --
 ALTER TABLE `userdata`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -60,7 +59,7 @@ ALTER TABLE `userdata`
 -- AUTO_INCREMENT de tabela `userdata`
 --
 ALTER TABLE `userdata`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(225) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
